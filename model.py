@@ -2,7 +2,7 @@ import torch
 
 color = 3
 
-class BottleNeck(nn.Module):
+class BottleNeck(torch.nn.Module):
 	"""docstring for BottleNeck"""
 	def __init__(self, inplanes, planes, stride=1):
 		super(BottleNeck, self).__init__()
