@@ -2,7 +2,7 @@ import torch
 
 color = 3
 
-class BottleNeck(nn.Module):
+class BottleNeck(torch.nn.Module):
 	"""docstring for BottleNeck"""
 	def __init__(self, inplanes, planes, stride=1):
 		super(BottleNeck, self).__init__()
@@ -39,7 +39,7 @@ def CONV1_1(inplanes,planes,s = 1, p = 0):
 		return nn.Conv2d(inplanes, planes, 1, stride = s, padding = p, bias=False)
 
 
-class CNN_Net(nn.Module):
+class CNN_Net(torch.nn.Module):
 	"""docstring for CNN_Net"""
 	def __init__(self):
 		super(CNN_Net, self).__init__()
